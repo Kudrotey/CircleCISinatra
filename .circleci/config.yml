@@ -11,7 +11,8 @@ jobs:
       - ruby/install-deps
       - run: gem install bundler
       - run: bundle install
-      - ruby/rspec-test
+      - run: bundle exec rspec
+      # - ruby/rspec-test
 
 workflows:
   build_and_test_deploy:
