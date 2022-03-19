@@ -10,6 +10,7 @@ jobs:
       - checkout
       - ruby/install-deps
       - run: gem install bundler
+      - run: bundle install
       - ruby/rspec-test
 
 workflows:
